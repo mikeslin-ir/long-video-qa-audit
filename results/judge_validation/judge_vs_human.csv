@@ -1,0 +1,151 @@
+idx,dataset,qid,task_type,judge_yes,human_yes
+0,egotextvqa,egotextvqa_outdoor_4248_11.0,others,1,1
+1,egotextvqa,egotextvqa_outdoor_4640_12.2,direction,0,0
+2,egotextvqa,egotextvqa_outdoor_4689_6.0,description,1,1
+3,egotextvqa,egotextvqa_outdoor_4118_3.0,direction,1,1
+4,egotextvqa,egotextvqa_outdoor_2504_10.0,location,1,1
+5,egotextvqa,egotextvqa_indoor_380fed0b-bdf2-4100-8edd-a5add0d280bb_14,hands-on,0,0
+6,music_avqa,00007005_5716,"[""Audio-Visual"", ""Comparative""]",0,0
+7,egotextvqa,egotextvqa_outdoor_2652_4.0,others,0,1
+8,music_avqa,00003847_1223,"[""Audio-Visual"", ""Existential""]",1,1
+9,music_avqa,00000924_3404,"[""Audio-Visual"", ""Counting""]",0,0
+10,music_avqa,00002796_790,"[""Audio-Visual"", ""Existential""]",1,1
+11,music_avqa,00002653_4079,"[""Audio-Visual"", ""Existential""]",0,0
+12,egotextvqa,egotextvqa_outdoor_2476_4.0,description,1,0
+13,music_avqa,00002313_2587,"[""Audio-Visual"", ""Counting""]",1,1
+14,egotextvqa,egotextvqa_outdoor_2999_2.0,location,0,1
+15,music_avqa,00004457_6247,"[""Audio-Visual"", ""Existential""]",0,0
+16,music_avqa,00006793_3447,"[""Audio-Visual"", ""Counting""]",1,1
+17,music_avqa,00003311_254,"[""Audio-Visual"", ""Counting""]",1,1
+18,egotextvqa,egotextvqa_outdoor_2250_5.3,location,0,0
+19,egotextvqa,egotextvqa_outdoor_161_13.0,description,1,1
+20,music_avqa,00003402_4121,"[""Audio-Visual"", ""Counting""]",0,0
+21,music_avqa,00004722_3438,"[""Audio-Visual"", ""Counting""]",1,1
+22,music_avqa,00005334_891,"[""Audio-Visual"", ""Counting""]",1,1
+23,music_avqa,00001068_4073,"[""Audio-Visual"", ""Comparative""]",0,0
+24,egotextvqa,egotextvqa_outdoor_206_15.0,direction,1,1
+25,music_avqa,00000794_1822,"[""Audio-Visual"", ""Counting""]",1,1
+26,egotextvqa,egotextvqa_outdoor_2756_4.1,intention reasoning,1,1
+27,music_avqa,00004080_5159,"[""Audio-Visual"", ""Existential""]",1,1
+28,egotextvqa,egotextvqa_outdoor_4242_14.0,description,1,1
+29,music_avqa,00000017_90,"[""Audio-Visual"", ""Counting""]",0,0
+30,egotextvqa,egotextvqa_outdoor_2782_10.0,location,1,1
+31,egotextvqa,egotextvqa_outdoor_2632_1.0,description,0,1
+32,music_avqa,00004704_5034,"[""Audio-Visual"", ""Counting""]",1,1
+33,music_avqa,00006964_1177,"[""Audio-Visual"", ""Counting""]",1,1
+34,music_avqa,00007409_3790,"[""Audio-Visual"", ""Counting""]",0,0
+35,music_avqa,00007431_5296,"[""Audio-Visual"", ""Comparative""]",1,1
+36,egotextvqa,egotextvqa_outdoor_2375_15.0,description,1,1
+37,egotextvqa,egotextvqa_indoor_0d9578b6-ee0c-44e0-9341-03d1a3392b2b_13,hands-on,0,0
+38,music_avqa,00008839_4341,"[""Audio-Visual"", ""Counting""]",0,0
+39,egotextvqa,egotextvqa_outdoor_235_6.0,intention reasoning,0,1
+40,music_avqa,00001919_496,"[""Audio-Visual"", ""Existential""]",1,1
+41,music_avqa,00006803_2542,"[""Audio-Visual"", ""Counting""]",0,0
+42,music_avqa,00003161_4452,"[""Audio-Visual"", ""Location""]",1,1
+43,music_avqa,00000917_4574,"[""Audio-Visual"", ""Counting""]",0,0
+44,music_avqa,00007173_3798,"[""Audio-Visual"", ""Counting""]",1,1
+45,music_avqa,00000153_82,"[""Audio-Visual"", ""Counting""]",0,0
+46,music_avqa,00005325_4876,"[""Audio-Visual"", ""Comparative""]",0,0
+47,music_avqa,00004035_2178,"[""Audio-Visual"", ""Counting""]",1,1
+48,music_avqa,00000936_1069,"[""Audio-Visual"", ""Counting""]",1,1
+49,music_avqa,00007364_1392,"[""Audio-Visual"", ""Existential""]",1,1
+50,music_avqa,00001014_5686,"[""Audio-Visual"", ""Comparative""]",0,0
+51,music_avqa,00003861_5651,"[""Audio-Visual"", ""Existential""]",0,0
+52,music_avqa,00002747_759,"[""Audio-Visual"", ""Existential""]",0,0
+53,music_avqa,00003563_2518,"[""Audio-Visual"", ""Counting""]",1,1
+54,music_avqa,00002733_3701,"[""Audio-Visual"", ""Existential""]",1,1
+55,egotextvqa,egotextvqa_outdoor_4066_7.0,location,1,1
+56,egotextvqa,egotextvqa_outdoor_361_9.0,intention reasoning,0,0
+57,egotextvqa,egotextvqa_outdoor_4398_15.0,description,0,1
+58,egotextvqa,egotextvqa_indoor_1569639c-b56e-4ce0-9722-2eefdab0f90d_10,hands-on,0,0
+59,egotextvqa,egotextvqa_outdoor_4408_9.0,direction,1,1
+60,music_avqa,00000648_2646,"[""Audio-Visual"", ""Counting""]",0,0
+61,egotextvqa,egotextvqa_outdoor_4358_6.0,description,1,1
+62,music_avqa,00004161_3853,"[""Audio-Visual"", ""Counting""]",0,0
+63,music_avqa,00007197_225,"[""Audio-Visual"", ""Counting""]",1,1
+64,music_avqa,00003304_2954,"[""Audio-Visual"", ""Counting""]",0,0
+65,egotextvqa,egotextvqa_outdoor_2976_2.0,description,0,0
+66,music_avqa,00008787_4230,"[""Audio-Visual"", ""Temporal""]",0,0
+67,egotextvqa,egotextvqa_outdoor_4720_2.0,location,1,1
+68,egotextvqa,egotextvqa_indoor_de326bda-444a-4ad4-81d6-5ebb456a3300_13,book-related,0,0
+69,music_avqa,00002739_2188,"[""Audio-Visual"", ""Counting""]",0,0
+70,music_avqa,00001283_2609,"[""Audio-Visual"", ""Counting""]",1,1
+71,music_avqa,00000944_2382,"[""Audio-Visual"", ""Counting""]",1,1
+72,music_avqa,00005196_1650,"[""Audio-Visual"", ""Counting""]",0,0
+73,music_avqa,00007608_4173,"[""Audio-Visual"", ""Temporal""]",0,0
+74,egotextvqa,egotextvqa_outdoor_4708_2.0,description,1,1
+75,egotextvqa,egotextvqa_outdoor_2250_10.0,location,1,1
+76,music_avqa,00008294_1464,"[""Audio-Visual"", ""Temporal""]",1,1
+77,egotextvqa,egotextvqa_outdoor_5077_3.0,location,1,1
+78,egotextvqa,egotextvqa_outdoor_2669_7.1,location,0,0
+79,music_avqa,00005176_5914,"[""Audio-Visual"", ""Comparative""]",0,0
+80,egotextvqa,egotextvqa_outdoor_2492_1.0,location,0,0
+81,music_avqa,00006669_5409,"[""Audio-Visual"", ""Location""]",0,0
+82,egotextvqa,egotextvqa_indoor_92d717cc-4946-4cb9-9d03-ddc137f4ba84_8,hands-on,0,0
+83,music_avqa,00001249_3541,"[""Audio-Visual"", ""Counting""]",1,1
+84,egotextvqa,egotextvqa_indoor_dfcbcf89-e268-4106-85ba-7875d19bd5e4_3,kitchen,0,0
+85,egotextvqa,egotextvqa_outdoor_4101_8.0,description,1,1
+86,music_avqa,00007523_3411,"[""Audio-Visual"", ""Counting""]",0,0
+87,music_avqa,00000961_5788,"[""Audio-Visual"", ""Location""]",0,0
+88,egotextvqa,egotextvqa_outdoor_366_9.0,direction,1,1
+89,music_avqa,00001940_3085,"[""Audio-Visual"", ""Counting""]",1,1
+90,music_avqa,00002089_347,"[""Audio-Visual"", ""Counting""]",0,0
+91,music_avqa,00001668_2144,"[""Audio-Visual"", ""Temporal""]",0,0
+92,music_avqa,00000146_155,"[""Audio-Visual"", ""Counting""]",0,0
+93,music_avqa,00008424_6287,"[""Audio-Visual"", ""Comparative""]",0,0
+94,music_avqa,00004735_4608,"[""Audio-Visual"", ""Existential""]",1,1
+95,music_avqa,00007436_2377,"[""Audio-Visual"", ""Counting""]",1,1
+96,music_avqa,00004155_901,"[""Audio-Visual"", ""Existential""]",1,1
+97,egotextvqa,egotextvqa_indoor_c4713495-fe22-47fd-8e19-aa3c21cc073b_2,others,0,0
+98,egotextvqa,egotextvqa_indoor_d60a82c2-814d-459f-94a6-bc9e324464ff_1,book-related,0,0
+99,music_avqa,00007141_5683,"[""Audio-Visual"", ""Temporal""]",0,0
+100,egotextvqa,egotextvqa_outdoor_4409_5.0,direction,0,1
+101,egotextvqa,egotextvqa_outdoor_2603_1.0,description,1,1
+102,music_avqa,00000870_1574,"[""Audio-Visual"", ""Counting""]",1,1
+103,music_avqa,00000272_160,"[""Audio-Visual"", ""Existential""]",1,1
+104,music_avqa,00003936_5029,"[""Audio-Visual"", ""Counting""]",0,0
+105,egotextvqa,egotextvqa_indoor_45c82d53-bb58-44a2-bfc4-a75ef59d8605_10,shopping,0,0
+106,music_avqa,00005396_4690,"[""Audio-Visual"", ""Existential""]",1,1
+107,music_avqa,00008969_4689,"[""Audio-Visual"", ""Temporal""]",0,0
+108,music_avqa,00000820_1951,"[""Audio-Visual"", ""Counting""]",0,0
+109,music_avqa,00007944_4182,"[""Audio-Visual"", ""Comparative""]",0,0
+110,music_avqa,00006171_2851,"[""Audio-Visual"", ""Counting""]",0,0
+111,egotextvqa,egotextvqa_indoor_c94ea4e2-4a2b-45f9-a20a-9a1f70c92e34_4,book-related,0,0
+112,egotextvqa,egotextvqa_outdoor_4377_8.0,location,1,0
+113,music_avqa,00002761_813,"[""Audio-Visual"", ""Counting""]",0,0
+114,egotextvqa,egotextvqa_outdoor_4530_12.0,direction,0,0
+115,egotextvqa,egotextvqa_outdoor_4247_15.0,intention reasoning,0,0
+116,egotextvqa,egotextvqa_outdoor_5014_3.0,direction,0,0
+117,music_avqa,00000195_188,"[""Audio-Visual"", ""Comparative""]",0,0
+118,music_avqa,00007468_4727,"[""Audio-Visual"", ""Comparative""]",0,0
+119,music_avqa,00005790_3476,"[""Audio-Visual"", ""Counting""]",1,1
+120,music_avqa,00005555_3809,"[""Audio-Visual"", ""Counting""]",0,0
+121,egotextvqa,egotextvqa_outdoor_2577_3.0,direction,1,1
+122,egotextvqa,egotextvqa_outdoor_4299_3.0,direction,1,1
+123,music_avqa,00005876_1903,"[""Audio-Visual"", ""Counting""]",1,1
+124,egotextvqa,egotextvqa_outdoor_4039_4.0,description,1,1
+125,music_avqa,00003467_2966,"[""Audio-Visual"", ""Existential""]",1,1
+126,music_avqa,00003776_3327,"[""Audio-Visual"", ""Counting""]",1,1
+127,music_avqa,00002165_385,"[""Audio-Visual"", ""Counting""]",0,0
+128,egotextvqa,egotextvqa_indoor_badca629-9d3a-4e30-903a-dbc6ea65a7e8_10,book-related,0,0
+129,egotextvqa,egotextvqa_outdoor_4398_1.0,location,1,1
+130,egotextvqa,egotextvqa_outdoor_4299_12.0,intention reasoning,1,1
+131,music_avqa,00004193_1824,"[""Audio-Visual"", ""Counting""]",1,1
+132,egotextvqa,egotextvqa_outdoor_4434_11.0,location,0,0
+133,music_avqa,00001927_558,"[""Audio-Visual"", ""Counting""]",1,1
+134,egotextvqa,egotextvqa_outdoor_2443_2.0,direction,1,1
+135,music_avqa,00000226_5619,"[""Audio-Visual"", ""Temporal""]",1,1
+136,music_avqa,00007665_3230,"[""Audio-Visual"", ""Counting""]",1,1
+137,egotextvqa,egotextvqa_outdoor_2406_3.0,direction,1,1
+138,egotextvqa,egotextvqa_outdoor_5156_2.0,intention reasoning,0,1
+139,music_avqa,00002004_3884,"[""Audio-Visual"", ""Counting""]",0,0
+140,music_avqa,00001386_1427,"[""Audio-Visual"", ""Counting""]",1,1
+141,music_avqa,00001972_5370,"[""Audio-Visual"", ""Comparative""]",0,0
+142,egotextvqa,egotextvqa_outdoor_4305_4.0,location,1,1
+143,music_avqa,00004929_5354,"[""Audio-Visual"", ""Temporal""]",1,1
+144,music_avqa,00002439_4005,"[""Audio-Visual"", ""Existential""]",1,1
+145,music_avqa,00001723_5702,"[""Audio-Visual"", ""Counting""]",0,0
+146,music_avqa,00004853_4643,"[""Audio-Visual"", ""Counting""]",1,1
+147,egotextvqa,egotextvqa_outdoor_5157_2.1,location,0,0
+148,music_avqa,00004568_5233,"[""Audio-Visual"", ""Temporal""]",1,1
+149,egotextvqa,egotextvqa_outdoor_4410_5.2,location,0,0

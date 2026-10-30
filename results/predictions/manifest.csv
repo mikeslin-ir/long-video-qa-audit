@@ -1,0 +1,84 @@
+run,group,dataset,backbone,description,n,accuracy,scoring,cascade_profile,modal_n_proposals,candidate_pool,inject_mode,evidence_position,n_injected
+trackB_long_n900_k8_uniform,vmme900,video_mme_long,Qwen2.5-VL-7B,uniform,900,46.2,exact_match,,,,,,0
+trackB_long_n900_k8_aks,vmme900,video_mme_long,Qwen2.5-VL-7B,AKS port,900,48.1,exact_match,,,,,,0
+trackB_long_n900_k8_keyscore,vmme900,video_mme_long,Qwen2.5-VL-7B,KeyScore port,900,47.1,exact_match,,,,,,0
+trackB_long_n900_k8_videotree,vmme900,video_mme_long,Qwen2.5-VL-7B,VideoTree port,900,47.8,exact_match,,,,,,0
+trackB_long_n900_k8_cascade_f0p5,vmme900,video_mme_long,Qwen2.5-VL-7B,"cascade, 50% uniform anchors",900,47.4,exact_match,audit,132,smaller than planned (a proposer was inactive),,,0
+trackB_long_n900_k8_cascade_f0p5_injectASR,vmme900,video_mme_long,Qwen2.5-VL-7B,cascade + ASR,900,47.9,exact_match,audit,132,smaller than planned (a proposer was inactive),asr,after,865
+trackB_long_n900_k8_cascade_f0p5_injectOCR,vmme900,video_mme_long,Qwen2.5-VL-7B,cascade + OCR,900,47.2,exact_match,audit,132,smaller than planned (a proposer was inactive),ocr,after,782
+trackB_long_n900_k8_llmPlanner_proceduralV3_injectOnly,vmme900,video_mme_long,Qwen2.5-VL-7B,"procedural-memory planner (v3, inject-only)",900,48.4,exact_match,audit+llm-inject,132,smaller than planned (a proposer was inactive),plan,after,228
+trackB_long_n900_k8_qwen2vl_uniform,vmme900_qwen2vl,video_mme_long,Qwen2-VL-7B,uniform,900,45.4,exact_match,,,,,,0
+trackB_long_n900_k8_qwen2vl_uniform_injectASR,vmme900_qwen2vl,video_mme_long,Qwen2-VL-7B,"uniform + ASR, block after the question",900,47.2,exact_match,,,,asr,after,900
+trackB_long_n900_k8_qwen2vl_uniform_injectASR_before,vmme900_qwen2vl,video_mme_long,Qwen2-VL-7B,"uniform + ASR, block before the question",900,52.7,exact_match,,,,asr,before,900
+trackB_long_n900_k8_qwen2vl_cascade_f0p5,vmme900_qwen2vl,video_mme_long,Qwen2-VL-7B,"cascade, 50% uniform anchors",900,44.8,exact_match,audit,132,smaller than planned (a proposer was inactive),,,0
+trackB_long_n900_k8_qwen2vl_cascade_f0p5_injectASR,vmme900_qwen2vl,video_mme_long,Qwen2-VL-7B,cascade + ASR (original run: larger candidate pool than the cascade arm),900,48.0,exact_match,audit,198,as planned,asr,after,865
+trackB_long_n900_k8_qwen2vl_cascade_f0p5_injectASR_audit,vmme900_qwen2vl,video_mme_long,Qwen2-VL-7B,"cascade + ASR, same candidate pool as the cascade arm",900,44.6,exact_match,audit,132,as planned,asr,after,865
+trackB_long_uniform_k8,vmme200,video_mme_long,Qwen2.5-VL-7B,uniform,200,50.0,exact_match,,,,,,0
+trackB_long_random_k8,vmme200,video_mme_long,Qwen2.5-VL-7B,random,200,48.5,exact_match,,,,,,0
+trackB_long_motion_k8,vmme200,video_mme_long,Qwen2.5-VL-7B,motion-difference only,200,46.5,exact_match,,,,,,0
+trackB_long_clip_k8,vmme200,video_mme_long,Qwen2.5-VL-7B,SigLIP only,200,49.5,exact_match,,,,,,0
+trackB_long_cascade_k8_f0p5,vmme200,video_mme_long,Qwen2.5-VL-7B,"cascade, 50% uniform anchors",200,53.5,exact_match,unrecorded,132,,,,0
+trackB_long_cascade_k8_relaxed_f0p5,vmme200,video_mme_long,Qwen2.5-VL-7B,forced multi-cue cascade,200,50.5,exact_match,unrecorded,132,,,,0
+trackB_long_uniform_k8_injectASR,vmme200,video_mme_long,Qwen2.5-VL-7B,uniform + ASR,200,51.5,exact_match,,,,asr,after,200
+trackB_long_cascade_k8_f0p5_injectASR,vmme200,video_mme_long,Qwen2.5-VL-7B,cascade + ASR,200,56.5,exact_match,unrecorded,132,,asr,after,193
+trackB_long_cascade_k8_f0p5_injectOCR,vmme200,video_mme_long,Qwen2.5-VL-7B,cascade + OCR,200,55.5,exact_match,unrecorded,132,,ocr,after,177
+trackB_long_cascade_k8_f0p5_injectASR_OCR,vmme200,video_mme_long,Qwen2.5-VL-7B,cascade + ASR + OCR,200,55.0,exact_match,unrecorded,132,,asr+ocr,after,193
+trackB_long_cascade_k8_llmPlanner_planInject_proceduralV3_injectOnly,vmme200,video_mme_long,Qwen2.5-VL-7B,"planner (v3, inject-only)",200,53.5,exact_match,audit+llm-inject,132,smaller than planned (a proposer was inactive),plan,after,69
+trackB_long_qwen2vl_k8_llmPlanner_proceduralV3_injectOnly,vmme200,video_mme_long,Qwen2-VL-7B,"planner (v3, inject-only)",200,45.0,exact_match,stacfp+llm-inject,197,as planned,plan,after,84
+trackB_long_uniform_k1,ksweep200,video_mme_long,Qwen2.5-VL-7B,uniform K=1,200,38.0,exact_match,,,,,,0
+trackB_long_uniform_k2,ksweep200,video_mme_long,Qwen2.5-VL-7B,uniform K=2,200,43.0,exact_match,,,,,,0
+trackB_long_uniform_k4,ksweep200,video_mme_long,Qwen2.5-VL-7B,uniform K=4,200,49.0,exact_match,,,,,,0
+trackB_long_uniform_k6,ksweep200,video_mme_long,Qwen2.5-VL-7B,uniform K=6,200,52.5,exact_match,,,,,,0
+trackB_long_cascade_k1_f0p5,ksweep200,video_mme_long,Qwen2.5-VL-7B,cascade K=1,200,48.0,exact_match,unrecorded,132,,,,0
+trackB_long_cascade_k2_f0p5,ksweep200,video_mme_long,Qwen2.5-VL-7B,cascade K=2,200,47.0,exact_match,unrecorded,132,,,,0
+trackB_long_cascade_k4_f0p5,ksweep200,video_mme_long,Qwen2.5-VL-7B,cascade K=4,200,50.0,exact_match,unrecorded,132,,,,0
+trackB_long_cascade_k6_f0p5,ksweep200,video_mme_long,Qwen2.5-VL-7B,cascade K=6,200,51.0,exact_match,unrecorded,132,,,,0
+trackB_xd_violence_uniform_k8,anomaly200,xd_violence,Qwen2.5-VL-7B,uniform,200,87.0,exact_match,,,,,,0
+trackB_xd_violence_cascade_k8_f0p5,anomaly200,xd_violence,Qwen2.5-VL-7B,"cascade, 50% uniform anchors",200,91.0,exact_match,audit,132,smaller than planned (a proposer was inactive),,,0
+trackB_xd_violence_cascade_k8_f0p5_injectASR,anomaly200,xd_violence,Qwen2.5-VL-7B,cascade + ASR (no transcripts existed: nothing injected),200,91.0,exact_match,audit,132,smaller than planned (a proposer was inactive),asr,after,0
+trackB_xd_violence_cascade_k8_f0p5_injectASR_transcribed,anomaly200,xd_violence,Qwen2.5-VL-7B,"cascade + ASR, transcripts built first",200,81.0,exact_match,audit,132,as planned,asr,after,200
+trackB_xd_violence_cascade_k8_f0p5_injectASR_transcribed_before,anomaly200,xd_violence,Qwen2.5-VL-7B,"cascade + ASR, transcripts, evidence placed before the question",200,91.0,exact_match,audit,132,as planned,asr,before,200
+trackB_xd_violence_cascade_k8_f0p5_injectOCR,anomaly200,xd_violence,Qwen2.5-VL-7B,cascade + OCR,200,89.5,exact_match,audit,132,smaller than planned (a proposer was inactive),ocr,after,74
+trackB_xd_violence_cascade_k8_llmPlanner_planInject_proceduralV1,anomaly200,xd_violence,Qwen2.5-VL-7B,planner (v1),200,92.5,exact_match,llm,200,,plan,after,0
+trackB_ucf_crime_uniform_k8,anomaly200,ucf_crime,Qwen2.5-VL-7B,uniform,200,81.5,exact_match,,,,,,0
+trackB_ucf_crime_cascade_k8_f0p5,anomaly200,ucf_crime,Qwen2.5-VL-7B,"cascade, 50% uniform anchors",200,85.0,exact_match,audit,132,smaller than planned (a proposer was inactive),,,0
+trackB_ucf_crime_cascade_k8_f0p5_injectASR,anomaly200,ucf_crime,Qwen2.5-VL-7B,cascade + ASR (no transcripts existed: nothing injected),200,85.0,exact_match,audit,132,smaller than planned (a proposer was inactive),asr,after,0
+trackB_ucf_crime_cascade_k8_f0p5_injectASR_transcribed,anomaly200,ucf_crime,Qwen2.5-VL-7B,"cascade + ASR, transcripts built first",200,72.0,exact_match,audit,132,as planned,asr,after,200
+trackB_ucf_crime_cascade_k8_f0p5_injectASR_transcribed_before,anomaly200,ucf_crime,Qwen2.5-VL-7B,"cascade + ASR, transcripts, evidence placed before the question",200,72.0,exact_match,audit,132,as planned,asr,before,200
+trackB_ucf_crime_cascade_k8_f0p5_injectOCR,anomaly200,ucf_crime,Qwen2.5-VL-7B,cascade + OCR,200,83.0,exact_match,audit,132,smaller than planned (a proposer was inactive),ocr,after,79
+trackB_ucf_crime_cascade_k8_llmPlanner_planInject_proceduralV1,anomaly200,ucf_crime,Qwen2.5-VL-7B,planner (v1),200,83.0,exact_match,llm,200,,plan,after,0
+trackB_long_n900_k8_stacfp_cascade_f0p5,vmme900_stacfp,video_mme_long,Qwen2.5-VL-7B,"cascade, STACFP profile",900,46.4,exact_match,stacfp,198,as planned,,,0
+trackB_long_n900_k8_stacfp_cascade_f0p5_injectASR,vmme900_stacfp,video_mme_long,Qwen2.5-VL-7B,"cascade + ASR, STACFP profile",900,46.9,exact_match,stacfp,198,as planned,asr,after,865
+wave9base_qwen2vl_music_avqa_FULL_noinject,music_avqa,music_avqa,Qwen2-VL-7B,audio-blind VLM,9129,66.1,llm_judge,,,,,,0
+wave9av_videollama2av_music_avqa_FULL,music_avqa,music_avqa,VideoLLaMA2.1-7B-AV,"audio-visual expert, soundtrack on",9129,81.2,llm_judge,,,,,,0
+audio_ablation_silent_stratified200,music_avqa_silent,music_avqa,VideoLLaMA2.1-7B-AV,"audio-visual expert, soundtrack silenced (200 per type)",1799,79.3,llm_judge,,,,,,0
+ksweep_uniform_k4_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,uniform K=4 (early pipeline),500,64.2,exact_match,,,,,,0
+ksweep_uniform_k8_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,uniform K=8 (early pipeline),500,67.8,exact_match,,,,,,0
+ksweep_cascade_k4_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,cascade K=4 (early pipeline),500,62.0,exact_match,unrecorded,132,,,,0
+ksweep_cascade_k8_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,cascade K=8 (early pipeline),500,66.2,exact_match,unrecorded,132,,,,0
+ksweep_random_k4_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,random K=4 (early pipeline),500,59.8,exact_match,,,,,,0
+ksweep_random_k8_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,random K=8 (early pipeline),500,63.4,exact_match,,,,,,0
+anchored_cascade_k8_f0p5_egoschema,egoschema_early,egoschema,Qwen2.5-VL-7B,"cascade, 50% uniform anchors (early pipeline)",500,66.2,exact_match,unrecorded,132,,,,0
+egoschema_n500_k8_uniform,egoschema,egoschema,Qwen2.5-VL-7B,uniform,500,67.8,exact_match,,,,,,0
+egoschema_n500_k8_cascade,egoschema,egoschema,Qwen2.5-VL-7B,cascade,500,66.2,exact_match,audit,132,as planned,,,0
+egoschema_n500_k8_aks,egoschema,egoschema,Qwen2.5-VL-7B,aks,500,65.2,exact_match,,,,,,0
+egoschema_n500_k8_keyscore,egoschema,egoschema,Qwen2.5-VL-7B,keyscore,500,63.8,exact_match,,,,,,0
+egoschema_n500_k8_videotree,egoschema,egoschema,Qwen2.5-VL-7B,videotree,500,67.6,exact_match,,,,,,0
+trackB_long_n900_k1_uniform,vmme900_k1,video_mme_long,Qwen2.5-VL-7B,uniform K=1,900,37.0,exact_match,,,,,,0
+trackB_long_n900_k1_uniform_center,vmme900_k1,video_mme_long,Qwen2.5-VL-7B,"uniform K=1, middle frame",900,42.1,exact_match,,,,,,0
+trackB_long_n900_k1_cascade_f0p5,vmme900_k1,video_mme_long,Qwen2.5-VL-7B,cascade K=1,900,39.7,exact_match,audit,132,as planned,,,0
+trackB_long_n900_k8_uniform_center,vmme900,video_mme_long,Qwen2.5-VL-7B,"uniform, segment midpoints",900,46.2,exact_match,,,,,,0
+trackB_long_n900_k8_cascade_f0p5_injectASR_before,vmme900_before,video_mme_long,Qwen2.5-VL-7B,"cascade + ASR, evidence placed before the question",900,50.2,exact_match,audit,132,as planned,asr,before,865
+trackB_long_n900_k8_uniform_injectASR_before,vmme900_before,video_mme_long,Qwen2.5-VL-7B,"uniform + ASR, evidence placed before the question",900,50.7,exact_match,,,,asr,before,900
+trackB_long_n900_k8_uniform_injectASR,vmme900_before,video_mme_long,Qwen2.5-VL-7B,"uniform + ASR, evidence after the answer instruction (audited layout)",900,47.8,exact_match,,,,asr,after,900
+trackB_long_n900_k8_uniform_injectASR_question,vmme900_before,video_mme_long,Qwen2.5-VL-7B,"uniform + ASR, evidence between the question and the options",900,47.2,exact_match,,,,asr,question,900
+trackB_long_n900_k8_uniform_injectASR_instruction,vmme900_before,video_mme_long,Qwen2.5-VL-7B,"uniform + ASR, evidence between the options and the answer instruction",900,48.1,exact_match,,,,asr,instruction,900
+xbackbone_lnv_uniform,xbackbone_lnv,video_mme_long,LLaVA-NeXT-Video-7B,uniform,200,35.5,exact_match,,,,,,0
+xbackbone_lnv_cascade,xbackbone_lnv,video_mme_long,LLaVA-NeXT-Video-7B,cascade,200,34.5,exact_match,stacfp,197,as planned,,,0
+xbackbone_lnv_cascadeASR,xbackbone_lnv,video_mme_long,LLaVA-NeXT-Video-7B,cascadeASR,200,33.0,exact_match,stacfp,197,as planned,asr,after,193
+xbackbone_lnv_ucf_crime_uniform,xbackbone_lnv,ucf_crime,LLaVA-NeXT-Video-7B,uniform,200,78.0,exact_match,,,,,,0
+xbackbone_lnv_ucf_crime_cascade,xbackbone_lnv,ucf_crime,LLaVA-NeXT-Video-7B,cascade,200,79.0,exact_match,stacfp,136,smaller than planned (a proposer was inactive),,,0
+xbackbone_lnv_ucf_crime_cascadeASR,xbackbone_lnv,ucf_crime,LLaVA-NeXT-Video-7B,cascadeASR,200,79.0,exact_match,stacfp,136,smaller than planned (a proposer was inactive),asr,after,0
+xbackbone_lnv_xd_violence_uniform,xbackbone_lnv,xd_violence,LLaVA-NeXT-Video-7B,uniform,200,80.0,exact_match,,,,,,0
+xbackbone_lnv_xd_violence_cascade,xbackbone_lnv,xd_violence,LLaVA-NeXT-Video-7B,cascade,200,83.0,exact_match,stacfp,157,smaller than planned (a proposer was inactive),,,0
+xbackbone_lnv_xd_violence_cascadeASR,xbackbone_lnv,xd_violence,LLaVA-NeXT-Video-7B,cascadeASR,200,83.0,exact_match,stacfp,157,smaller than planned (a proposer was inactive),asr,after,0

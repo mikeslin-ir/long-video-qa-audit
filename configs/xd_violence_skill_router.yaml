@@ -1,0 +1,11 @@
+planner: rule_based
+cache_dir: results/skill_router_cache
+candidate_stride: 5
+normalization: minmax
+lambda_uniform: 0.0
+default_dataset: xd_violence
+default_weights:
+  motion: 0.3
+  audio: 0.3
+  semantic_siglip: 0.4
+semantic_siglip_model: google/siglip-base-patch16-224

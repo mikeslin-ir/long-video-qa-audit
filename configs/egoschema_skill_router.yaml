@@ -1,0 +1,10 @@
+planner: rule_based
+cache_dir: results/skill_router_cache
+candidate_stride: 10
+normalization: minmax
+lambda_uniform: 0.3
+default_dataset: egoschema
+default_weights:
+  semantic_siglip: 0.7
+  uniform_fallback: 0.3
+semantic_siglip_model: google/siglip-base-patch16-224

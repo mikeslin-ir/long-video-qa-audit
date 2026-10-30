@@ -1,0 +1,12 @@
+planner: rule_based
+cache_dir: results/skill_router_cache
+candidate_stride: 8
+normalization: minmax
+lambda_uniform: 0.2
+default_dataset: music_avqa
+default_weights:
+  audio: 0.5
+  semantic_siglip: 0.3
+  uniform_fallback: 0.2
+semantic_siglip_model: google/siglip-base-patch16-224
+asr_whisper_model: openai/whisper-tiny.en

@@ -1,0 +1,52 @@
+[wave7] root=<outputs>  tag=trackB_long_n900_k8  task_type=None
+  [OK] uniform                                   n= 900  dir=trackB_long_n900_k8_uniform
+  [OK] cascade (no inject)                       n= 900  dir=trackB_long_n900_k8_cascade_f0p5
+  [OK] cascade + ASR                             n= 900  dir=trackB_long_n900_k8_cascade_f0p5_injectASR
+  [OK] cascade + OCR                             n= 900  dir=trackB_long_n900_k8_cascade_f0p5_injectOCR
+  [OK] ProcMem v3 (planner)                      n= 900  dir=trackB_long_n900_k8_llmPlanner_proceduralV3_injectOnly
+
+[wave7] paired n=900 (intersection across 5 methods)
+
+=== Accuracy (paired, n=900) ===
+method                                       acc   sec/clip
+  uniform                                    46.22      10.03
+  cascade (no inject)                        47.44      13.25
+  cascade + ASR                              47.89      12.80
+  cascade + OCR                              47.22      12.58
+  ProcMem v3 (planner)                       48.44      15.71
+
+=== Pairwise paired exact McNemar ===
+A                                         B                                            b     c          p
+  uniform                                   cascade (no inject)                         94    83      0.452
+  uniform                                   cascade + ASR                              114    99      0.337
+  uniform                                   cascade + OCR                               95    86      0.552
+  uniform                                   ProcMem v3 (planner)                        99    79      0.154
+  cascade (no inject)                       cascade + ASR                               45    41      0.747
+  cascade + ASR                             ProcMem v3 (planner)                        34    29      0.615
+
+
+############################################################
+# Paste-ready snippets for paper/
+############################################################
+
+--- paper/sections/experiments.tex  (tab:wave7 rows) ---
+% replace the 5 \res rows in tab:wave7 with these:
+  uniform                                   &  46.2  &  10.0  & --- \\
+  cascade (no inject)                       &  47.4  &  13.3  & 0.452 \\
+  cascade + ASR                             &  47.9  &  12.8  & 0.337 \\
+  cascade + OCR                             &  47.2  &  12.6  & 0.552 \\
+  ProcMem v3 (planner)                      & \textbf{ 48.4}  &  15.7  & 0.154 \\
+
+--- paper/figures/teaser.tex  (2x2 cell values) ---
+  top-left  (Uniform, no inject):      46.2
+  top-right (Uniform, +ASR):          [need a separate uniform+ASR run; current grid not in wave7]
+  bot-left  (Cascade, no inject):      47.4   delta vs uniform: +1.2
+  bot-right (Cascade, +ASR) HILITE:    47.9   delta vs uniform: +1.7   delta vs no-inject: +0.4
+
+--- abstract / intro headline numbers ---
+  cascade alone over uniform : +1.2 pt
+  +ASR on top of cascade     : +0.4 pt
+  cascade+ASR over uniform   : +1.7 pt
+  planner vs always-inject ASR: +0.6 pt  (F3 check on long; expect ~0; planner wins on XDV separately)
+
+[wave7] done.

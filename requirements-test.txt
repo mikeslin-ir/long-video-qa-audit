@@ -1,0 +1,7 @@
+# Model-free CPU checks; install in a separate environment from GPU requirements.
+numpy>=1.26,<3
+scipy>=1.11,<2
+opencv-python-headless>=4.8,<5
+Pillow>=10,<13
+PyYAML>=6,<7
+pytest>=8,<10

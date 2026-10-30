@@ -1,0 +1,14 @@
+planner: rule_based
+cache_dir: results/skill_router_cache
+candidate_stride: 5
+max_candidates: null
+normalization: minmax
+lambda_uniform: 0.0
+use_stub_skills: false
+semantic_clip_model: openai/clip-vit-base-patch32
+semantic_siglip_model: google/siglip-base-patch16-224
+object_siglip_model: google/siglip-base-patch16-224
+asr_whisper_model: openai/whisper-tiny.en
+ocr_backend: auto
+ocr_conf_threshold: 0.35
+# Short clips (~10-30s); semantic similarity dominates.

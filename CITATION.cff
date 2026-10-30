@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or audit protocol, please cite the paper below."
+type: software
+title: "Long-Video QA Audit"
+authors:
+  - family-names: Lin
+    given-names: Shih-Yao
+    affiliation: Independent Researcher
+repository-code: "https://github.com/mikeslin-ir/long-video-qa-audit"
+url: "https://github.com/mikeslin-ir/long-video-qa-audit"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Where Do Reported Long-Video QA Gains Come From? A Controlled Audit of Frame Selection, Evidence Injection, and Expert Routing"
+  authors:
+    - family-names: Lin
+      given-names: Shih-Yao
+      affiliation: Independent Researcher
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  year: 2027
+  url: "https://github.com/mikeslin-ir/long-video-qa-audit"
+  notes: "Accepted for publication; final proceedings metadata forthcoming."

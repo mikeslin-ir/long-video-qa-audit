@@ -1,0 +1,25 @@
+{
+  "source": "/tmp/pools",
+  "aks": {
+    "arrays": 100,
+    "K": 8,
+    "official_returns_exactly_K": 0.0,
+    "official_returns_more_than_K": 0.0,
+    "official_returns_fewer_than_K": 1.0,
+    "mean_official_length": 0.0,
+    "port_equals_official_when_official_has_K": NaN,
+    "port_equals_official_after_top_score_trim": 0.0,
+    "mean_jaccard": 0.0,
+    "official_at_depth_3_returns_exactly_K": 1.0,
+    "mean_jaccard_port_vs_official_depth_3": 0.4673317793317793,
+    "mean_jaccard_port_vs_naive_top_K": 0.6607712287712285
+  },
+  "keyscore": {
+    "pairs": 100,
+    "K": 8,
+    "top_k_overlap_historical_vs_current_weights": 0.96,
+    "reference": "keyscore.KeyScore (historical weights)",
+    "max_abs_score_difference": 3.451108932495117e-05,
+    "same_top_k_set": 1.0
+  }
+}

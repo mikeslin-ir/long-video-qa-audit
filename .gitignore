@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Run artifacts and caches (not redistributed)
+outputs/
+cache/
+/results/*_cache/
+/logs/
+*.npz
+*.npy
+*.log
+
+# Local editor / OS noise
+.DS_Store
+.vscode/
+.idea/
+
+# Local credentials
+.env
+.env.*
+!.env.example
