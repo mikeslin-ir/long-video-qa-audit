@@ -4,7 +4,6 @@
 A controlled audit of *frame selection*, *evidence injection*, and *expert routing*.
 
 **Shih-Yao Lin · Independent Researcher · WACV 2027**
-(accepted; final proceedings metadata forthcoming).
 
 This repository is the code release for **RouteAudit**, a controlled audit
 protocol and harness, **not** a leaderboard method. Everything here exists to make one kind of comparison
@@ -545,10 +544,8 @@ button (configured by [`CITATION.cff`](CITATION.cff)).
 @inproceedings{lin2027longvideoaudit,
   author    = {Lin, Shih-Yao},
   title     = {Where Do Reported Long-Video {QA} Gains Come From? A Controlled Audit of Frame Selection, Evidence Injection, and Expert Routing},
-  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   year      = {2027},
-  url       = {https://github.com/mikeslin-ir/long-video-qa-audit},
-  note      = {Accepted for publication; final proceedings metadata forthcoming}
 }
 ```
 
