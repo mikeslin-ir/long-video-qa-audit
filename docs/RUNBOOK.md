@@ -1,6 +1,6 @@
-# Runbook — Run the RouteAudit pipeline on any (video, question)
+# Runbook — Run the VideoRouteAudit pipeline on any (video, question)
 
-This runbook shows how to run the **RouteAudit** pipeline (the audited five-stage routing cascade)
+This runbook shows how to run the **VideoRouteAudit** pipeline (the audited five-stage routing cascade)
 on a single video + free-form question and read the result. It uses
 [`scripts/run_one.py`](../scripts/run_one.py), which reuses the exact same code
 paths as the benchmark (`cascade.CascadeRouter` + `router.backbones` experts), so

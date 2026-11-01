@@ -1,6 +1,6 @@
 # Procedural Memory — How It Works, Analysis & Discussion
 
-This note explains the **procedural memory** component of the RouteAudit planner: what
+This note explains the **procedural memory** component of the VideoRouteAudit planner: what
 it is, how it is wired into the system, the experimental evidence for it, and an
 honest discussion of what it does and does not buy us. It consolidates the
 material in the paper (`paper/sections/method.tex` §`sec:procmem`,

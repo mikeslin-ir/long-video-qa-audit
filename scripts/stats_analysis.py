@@ -418,7 +418,7 @@ def main() -> None:
 
     results = []
     print("=" * 78)
-    print("RouteAudit statistical hardening  (McNemar exact / bootstrap CI / TOST / power)")
+    print("VideoRouteAudit statistical hardening  (McNemar exact / bootstrap CI / TOST / power)")
     print("=" * 78)
     for c in BATTERY:
         try:

@@ -5,7 +5,7 @@ A controlled audit of *frame selection*, *evidence injection*, and *expert routi
 
 **Shih-Yao Lin · Independent Researcher · WACV 2027**
 
-This repository is the code release for **RouteAudit**, a controlled audit
+This repository is the code release for **VideoRouteAudit**, a controlled audit
 protocol and harness, **not** a leaderboard method. Everything here exists to make one kind of comparison
 possible: hold the backbone, frame budget `K`, prompt scaffold, decoding
 configuration and grader fixed, then vary exactly one routing decision at a

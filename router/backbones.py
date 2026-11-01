@@ -316,7 +316,7 @@ class Qwen2VLExpert(VLMExpert):
 class LLaVAVideoExpert(VLMExpert):
     """LLaVA-Video-7B-Qwen2 vision-language reasoner (lmms-lab).
 
-    Used as a cross-VLM-backbone sanity check for RouteAudit findings. Requires
+    Used as a cross-VLM-backbone sanity check for VideoRouteAudit findings. Requires
     the `llava` package from https://github.com/LLaVA-VL/LLaVA-NeXT
     installed on PYTHONPATH (pip install --no-deps git+https://...).
 
@@ -492,7 +492,7 @@ class LLaVAVideoExpert(VLMExpert):
 class LlavaNextVideoExpert(VLMExpert):
     """LLaVA-NeXT-Video-7B vision-language reasoner (HF-native).
 
-    Cross-*architecture-family* backbone for RouteAudit robustness: unlike the
+    Cross-*architecture-family* backbone for VideoRouteAudit robustness: unlike the
     Qwen2-VL / Qwen2.5-VL backbones (Qwen2 LLM + custom ViT), this model
     pairs a **Llama-2 7B** language model with a **CLIP** vision encoder,
     loaded through the native ``LlavaNextVideoForConditionalGeneration``

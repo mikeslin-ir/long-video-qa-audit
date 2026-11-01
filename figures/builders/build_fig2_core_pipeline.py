@@ -1,4 +1,4 @@
-"""Figure 2: RouteAudit core evidence-routing pipeline."""
+"""Figure 2: VideoRouteAudit core evidence-routing pipeline."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -52,7 +52,7 @@ def text_icon(ax, x, y, w, h):
 def build() -> None:
     apply_publication_style(FigureStyle(font_size=7, axes_linewidth=1.0))
     fig, ax = blank_canvas((7.0, 2.54))
-    ax.text(.012, .967, "RouteAudit routes evidence before one matched VLM call", fontsize=8.0,
+    ax.text(.012, .967, "VideoRouteAudit routes evidence before one matched VLM call", fontsize=8.0,
             color=INK, fontweight="bold", va="top")
     ax.text(.012, .928, "Four visual stages choose frames; an independent text branch optionally augments the prompt.",
             fontsize=5.3, color=SOFT, va="top")

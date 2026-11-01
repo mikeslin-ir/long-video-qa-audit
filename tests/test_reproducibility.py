@@ -1,4 +1,4 @@
-"""Reproducibility / determinism tests for the RouteAudit selection stack.
+"""Reproducibility / determinism tests for the VideoRouteAudit selection stack.
 
 These tests pin down the paper's determinism claim: given fixed evidence
 signals, every stage of the CPU selection pipeline (normalization, fusion,
