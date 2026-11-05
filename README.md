@@ -23,6 +23,35 @@ time and measure what actually changes.
 | **F2** | Three of four matched contrasts are **1.6–3.8× larger** on the commonly used `n=200` subsets and the fourth (planner vs. always-inject ASR) reverses sign. Resampling 200-item subsets from the full-bucket predictions flips the sign of the full-bucket effect in **35.8%** of draws. The minimum detectable effect at `n=200` is **8.3–10.4 pt** — larger than the 1–5 pt gains this literature reports. |
 | **F3** | Routing gains are domain-, protocol- and model-dependent. The pooled cascade+ASR gain over uniform (+4.7 pt on the three `n=200` development subsets) shrinks to +1.6 pt outside the development prefix, and the published anomaly-domain "+ASR" arms injected nothing (see [Caveats](#caveats)). With real transcripts, ASR appended after the question *lowers* XD-Violence accuracy by 10.0 pt (91.0 → 81.0) while the identical text placed before the question does not (91.0); on UCF-Crime Whisper hallucinates on silent footage and costs 13.0 pt either way. On Video-MME, ASR placed before the question adds about 4 pt to uniform sampling (+4.4, *p* = 0.002) and to the cascade (+4.0, *p* = 0.024) alike (post hoc, unadjusted; appended it gives +1.7, n.s.), so that gain follows the text and its position, not the frames (text between the question and the options, or after the options, adds only +1 to +2 pt); on Qwen2-VL-7B uniform + ASR with the text first gains +7.2 pt (appended +1.8, n.s.). The largest measured contrast comes from swapping the answering model on MUSIC-AVQA (+15.1 pt micro-average, +33.3 pt on AV-Temporal), but the same audio-visual expert with its soundtrack silenced keeps 92% of that gain (audio share 8%, CI [0, 16]) and with another video's soundtrack still 69%: the expert does read the audio (the wrong soundtrack is 3.4 pt below silence) but the contrast is mostly a model swap. |
 
+### The audit at a glance
+
+<p align="center"><img src="figures/fig1_mainidea.png" width="560" alt="Three obstacles to long-video QA claims"></p>
+
+**Figure 1.** Three obstacles to long-video QA claims. (a) `K` frames must cover a
+44-minute timeline. (b) Some questions need sound, not pixels alone. (c) Across 20,000
+random `n=200` subsets of our cached `n=900` outcomes, 35.8% reverse the sign of the
+full-bucket effect.
+
+<p align="center"><img src="figures/figure2_pipeline.png" width="860" alt="Audit protocol and pipeline"></p>
+
+**Figure 2.** Matched contrasts are the unit of measurement: backbone, budget, decoding,
+prompt, grader and items stay fixed while one routing decision flips. The ported selectors
+share one candidate pool; the cascade scores its own (see the note under the main table),
+so cascade-vs-uniform compares pipelines, not selection rules alone.
+
+<p align="center"><img src="figures/fig3_scalegap.png" width="520" alt="Subset-scale versus full-bucket effect estimates"></p>
+
+**Figure 3 (F2).** Subset-scale estimates (hollow, `n=200`) against the full-bucket
+estimate of the same contrast (filled, `n=900`, 95% CI). Three of four are larger at
+`n=200` and one reverses sign.
+
+<p align="center"><img src="figures/fig_f4_expert.png" width="620" alt="Answering-model swap and silenced-audio control on MUSIC-AVQA"></p>
+
+**Figure 4 (F3b).** MUSIC-AVQA, same judge, 200 questions per type: audio-blind
+Qwen2-VL-7B (circle), the audio-visual expert (square) and the same expert with its
+soundtrack silenced (diamond). Swapping the answering model gives the largest contrast,
+and most of it survives silencing the audio: mostly a model swap.
+
 ### Main result — Video-MME long, `K=8`, `n=900`
 
 | Method | Acc. (%) | Δ | 95% CI | *p* | Wall s/item |
