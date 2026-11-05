@@ -5,6 +5,8 @@ A controlled audit of *frame selection*, *evidence injection*, and *expert routi
 
 **Shih-Yao Lin · Independent Researcher · WACV 2027**
 
+To cite this work, see [Citation](#citation).
+
 This repository is the code release for **VideoRouteAudit**, a controlled audit
 protocol and harness, **not** a leaderboard method. Everything here exists to make one kind of comparison
 possible: hold the backbone, frame budget `K`, prompt scaffold, decoding
@@ -548,9 +550,6 @@ button (configured by [`CITATION.cff`](CITATION.cff)).
   year      = {2027},
 }
 ```
-
-Add the final paper URL, pages, and DOI when assigned; they are intentionally
-not guessed here.
 
 ## License
 
