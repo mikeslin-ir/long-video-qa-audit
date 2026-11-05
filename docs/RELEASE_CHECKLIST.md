@@ -81,7 +81,7 @@ Run on one GB10 (119 GB unified memory) with the drivers in
 mismatched-audio run); the packager lists `audio_ablation_silent_rest` under "not found".
 
 Operational notes from these runs: the judge loads its 65 GB checkpoint shard by
-shard (`scripts/llm_judge.py`, see the README), reuses verdicts of identical
+shard (`scripts/llm_judge.py`, see docs/USAGE.md), reuses verdicts of identical
 question / gold / answer triples (`--reuse-from`; 1,631 of the 1,799 silenced-audio
 verdicts, with 30 of 30 re-judged reused verdicts reproduced), and resumes from a
 partial file; on this machine at most four 7B jobs fit next to each other. The
@@ -94,7 +94,7 @@ comparable with the other runs. `scripts/paper_runs/run_sharded.sh` packages thi
 
 ## Known differences between the released defaults and the audited runs
 
-These are documented in the README caveats and the paper; they are listed here
+These are documented in docs/CAVEATS.md and the paper; they are listed here
 so that nobody has to rediscover them.
 
 - The library default planner profile is `stacfp` (STACFP + EARS + uniform,

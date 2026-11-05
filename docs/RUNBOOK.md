@@ -109,7 +109,7 @@ python scripts/run_one.py --video news.mp4 \
 
 **Not yet validated as a standalone demo:** this entry point currently loads
 the visual model before the AV model. On a single GPU, use the isolated
-benchmark driver described in the repository README instead. Do not assume
+benchmark driver described in docs/USAGE.md instead. Do not assume
 that the demo enforces the single-model constraint described above.
 
 For questions that need the soundtrack (which instrument, louder/softer,
@@ -163,7 +163,7 @@ python scripts/run_one.py --video clip.mp4 \
 > The cascade's default planner profile is `stacfp` (STACFP + EARS + uniform
 > proposals, redundancy filter). The paper's audited runs used
 > `--cascade_profile audit` of `scripts/run_qa_benchmark.py` (EARS + uniform
-> proposals, motion-difference filter; see the README caveats). This demo entry
+> proposals, motion-difference filter; see docs/CAVEATS.md). This demo entry
 > point uses the default profile. ASR injection needs cached transcripts:
 > `scripts/prewarm_asr_cache.py` builds them, and a video without one is injected
 > with nothing.
